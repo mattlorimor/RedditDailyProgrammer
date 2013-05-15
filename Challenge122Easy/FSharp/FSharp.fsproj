@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Challenge122Easy.fs" />
     <None Include="App.config" />
+    <None Include="Challenge122Easy.linq" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
