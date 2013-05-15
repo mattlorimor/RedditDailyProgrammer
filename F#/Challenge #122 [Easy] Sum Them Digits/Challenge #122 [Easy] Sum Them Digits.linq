@@ -1,16 +1,18 @@
-﻿// Matt Lorimor
+<Query Kind="FSharpProgram" />
+
+// Matt Lorimor
 // Language: F#
 // Challenge #122 [Easy] Sum Them Digits - http://www.reddit.com/r/dailyprogrammer/comments/1berjh/040113_challenge_122_easy_sum_them_digits/
-// Can be opened Visual Studio
+// Can be opened with LinqPad - http://www.linqpad.net/
 
 let inputNumber = 1073741824
 
 let subtractNine num =
-    num - 9
+	num - 9
 
 //Uses the formula from Wikipeda for finding digital roots: http://en.wikipedia.org/wiki/Digital_root
 let calculateDigitalRootModulo num =
-    num % 9
+	num % 9
 
 //While loop version
 let calculateDigitalRoot num =
@@ -21,7 +23,7 @@ let calculateDigitalRoot num =
             continueLoop <- false
         else
             result <- subtractNine result
-    result
+	result
 
 //Recursive version
 let rec calculateDigitalRootRecursive num =
@@ -29,7 +31,7 @@ let rec calculateDigitalRootRecursive num =
         calculateDigitalRootRecursive (subtractNine num)
     else
         num
-
+		
 let moduloResult = calculateDigitalRootModulo inputNumber
 let customResult = calculateDigitalRoot inputNumber
 let recursiveResult = calculateDigitalRootRecursive inputNumber
