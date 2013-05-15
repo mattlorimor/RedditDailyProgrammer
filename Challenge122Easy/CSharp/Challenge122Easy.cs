@@ -1,15 +1,13 @@
-// Matt Lorimor
-// C#
-// Solutions for the programming challenge posted in /r/dailyprogrammer
-// Challenge #122 [Easy] Sum Them Digits - http://www.reddit.com/r/dailyprogrammer/comments/1berjh/040113_challenge_122_easy_sum_them_digits/
-// Can be opened with Visual Studio
-
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Challenge122Easy
+namespace CSharp
 {
-    class Program
+    class Challenge122Easy
     {
         static void Main(string[] args)
         {
